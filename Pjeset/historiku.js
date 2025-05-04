@@ -38,9 +38,44 @@ document.write(`
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-content">
+                            <div class="timeline-year">1999</div>
+                            <h3>Zgjerimi i profileve</h3>
+                            <p>Në vitin 1999, shkolla shtoi profile të reja, duke përfshirë ndihmës mjekësor dhe teknologji informacioni, për të përmbushur kërkesat në rritje të tregut të punës.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-year">2005</div>
+                            <h3>Inaugurimi i laboratorëve të rinj</h3>
+                            <p>Në vitin 2005, u investua në rinovimin dhe zgjerimin e laboratorëve për elektronikë dhe mekanikë, duke ofruar mundësi për nxënësit të zhvillojnë aftësitë praktike.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-year">2014</div>
+                            <h3>Bashkëpunimi ndërkombëtar</h3>
+                            <p>Në vitin 2014, shkolla filloi bashkëpunime me shkolla profesionale nga shtetet e Bashkimit Europian, duke krijuar mundësi për shkëmbim eksperiencash dhe rritje të cilësisë në mësimdhënie.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
                             <div class="timeline-year">2019</div>
                             <h3>Bashkëpunimi me projektin ALLED 2</h3>
                             <p>Më 9 dhjetor 2019, IAAP "Skënder Luarasi" nënshkroi një memorandum bashkëpunimi me projektin ALLED 2, i cili synon përafrimin e arsimit profesional me nevojat e tregut të punës dhe përmirësimin e cilësisë së arsimit profesional në Kosovë.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-year">2020</div>
+                            <h3>Pjesëmarrja në konkursin BONEVET Creative Challenge</h3>
+                            <p>Në vitin 2020, nxënësit e shkollës morën pjesë në konkursin kombëtar "BONEVET Creative Challenge", duke zhvilluar projekte inovative dhe fituar çmime për krijimet e tyre teknologjike.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-year">2021</div>
+                            <h3>Bashkëpunimi me SHPIK</h3>
+                            <p>Në vitin 2021, shkolla filloi një bashkëpunim me SHPIK për zhvillimin e inovacionit dhe përgatitjen e nxënësve për tregun e punës me aftësi ndërmarrëse dhe digjitale.</p>
                         </div>
                     </div>
                     <div class="timeline-item">
@@ -52,23 +87,37 @@ document.write(`
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-content">
+                            <div class="timeline-year">2022</div>
+                            <h3>Donacion librash nga Qendra Multimedia</h3>
+                            <p>Më 18 gusht 2022, Qendra Multimedia dhuroi mbi 120 ekzemplarë librash për IAAP "Skënder Luarasi", në kuadër të programit "Kultura për Ndryshim", duke pasuruar bibliotekën e shkollës me tituj të rinj.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
                             <div class="timeline-year">2023</div>
                             <h3>Ndërtimi i sallës sportive</h3>
-                            <p>Në gusht 2023, Komuna e Suharekës ndau mbi 22 mijë euro për punë shtesë në ndërtimin e sallës sportive të IAAP "Skënder Luarasi", duke përmirësuar infrastrukturën për aktivitetet fizike dhe sportive të nxënësve.</p>
+                            <p>Në gusht 2023, Komuna e Suharekës ndau mbi 22 mijë euro për ndërtimin e sallës sportive të IAAP "Skënder Luarasi", duke përmirësuar infrastrukturën për aktivitetet fizike dhe sportive të nxënësve.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-year">2023</div>
+                            <h3>Aktivitet komunitar me Policinë e Suharekës</h3>
+                            <p>Në maj 2023, nxënësit kontribuan në mirëmbajtjen e ambientit duke lyer rrethojat e stacionit policor, duke forcuar bashkëpunimin ndërmjet shkollës dhe institucioneve lokale.</p>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-content">
                             <div class="timeline-year">2024</div>
-                            <h3>Themelimi i Qendrës së Inovacionit</h3>
-                            <p>Në bashkëpunim me SHPIK dhe Drejtorinë Komunale të Arsimit në Suharekë, IAAP "Skënder Luarasi" themeloi Qendrën e Inovacionit dhe Ndërmarrësisë, me qëllim fuqizimin e shkathtësive digjitale dhe sipërmarrëse të nxënësve.</p>
+                            <h3>Themelimi i Qendrës së Inovacionit dhe Ndërmarrësisë</h3>
+                            <p>Në shkurt 2024, në bashkëpunim me SHPIK dhe Drejtorinë Komunale të Arsimit në Suharekë, IAAP "Skënder Luarasi" themeloi Qendrën e Inovacionit dhe Ndërmarrësisë, me qëllim fuqizimin e shkathtësive digjitale dhe sipërmarrëse të nxënësve.</p>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-content">
                             <div class="timeline-year">2024</div>
                             <h3>Donacion librash</h3>
-                            <p>Më 18 gusht 2024, Qendra Multimedia dhuroi mbi 120 ekzemplarë librash të ndryshëm për IAAP "Skënder Luarasi", në kuadër të programit "Kultura për Ndryshim", duke pasuruar bibliotekën e shkollës me tituj të rinj.</p>
+                            <p>Më 18 gusht 2024, Qendra Multimedia dhuroi mbi 120 ekzemplarë librash për IAAP "Skënder Luarasi", duke pasuruar më tej bibliotekën e shkollës.</p>
                         </div>
                     </div>
                     <div class="timeline-item">
