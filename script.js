@@ -76,11 +76,13 @@ function updateTimeline(index) {
     if (!timeline || !timelineItems.length) return;
 
     timelineItems.forEach(item => {
+        item.style.transition = 'opacity 0.2s ease-out, transform 0.2s ease-out';
         item.style.opacity = '0';
         item.style.transform = 'translateY(20px)';
     });
 
     if (timelineItems[index]) {
+        timelineItems[index].style.transition = 'opacity 0.2s ease-out, transform 0.2s ease-out';
         timelineItems[index].style.opacity = '1';
         timelineItems[index].style.transform = 'translateY(0)';
 
@@ -92,18 +94,16 @@ function updateTimeline(index) {
         const relativePosition = itemRect.top - timelineRect.top;
         yearIndicator.style.top = `${relativePosition + itemRect.height / 2}px`;
 
-        // Move the close button to follow the year-indicator
         if (window.innerWidth > 600) {
             const closeBtn = document.querySelector('.timeline-close-btn');
             if (closeBtn) {
-                // Offset to center the button above the circle
                 closeBtn.style.top = `${relativePosition + itemRect.height / 2 - 40}px`;
             }
         }
     }
 }
 
-function smoothScrollTo(target, duration = 400) {
+function smoothScrollTo(target, duration = 600) {
     if (isNavigating) return;
     const start = window.pageYOffset;
     const distance = target - start;
@@ -115,8 +115,8 @@ function smoothScrollTo(target, duration = 400) {
         const progress = Math.min(timeElapsed / duration, 1);
         const easeInOutCubic = progress => {
             return progress < 0.5
-                ? 4 * progress * progress * progress
-                : 1 - Math.pow(-2 * progress + 2, 3) / 2;
+                ? 2 * progress * progress
+                : 1 - Math.pow(-2 * progress + 2, 2) / 2;
         };
         window.scrollTo(0, start + (distance * easeInOutCubic(progress)));
         if (progress < 1 && !isNavigating) {
@@ -135,7 +135,7 @@ function handleScroll() {
     if (!timeline || !timeline.classList.contains('visible') || isNavigating || isScrolling) return;
 
     const currentTime = Date.now();
-    if (currentTime - lastScrollTime < 100) return;
+    if (currentTime - lastScrollTime < 150) return;
     lastScrollTime = currentTime;
 
     const timelineRect = timeline.getBoundingClientRect();
@@ -157,12 +157,12 @@ function handleScroll() {
         }
     });
 
-    // Only lock if the closest box is within 60px of the center (faster pop)
-    if (closestDistance < 60 && closestIndex !== currentIndex) {
+    // Only lock if the closest box is within 100px of the center (smoother transition)
+    if (closestDistance < 100 && closestIndex !== currentIndex) {
         currentIndex = closestIndex;
         isScrolling = true;
         const targetScrollPosition = itemPositions[currentIndex];
-        smoothScrollTo(targetScrollPosition - (window.innerHeight / 2) + (timelineItems[currentIndex].offsetHeight / 2), 400);
+        smoothScrollTo(targetScrollPosition - (window.innerHeight / 2) + (timelineItems[currentIndex].offsetHeight / 2), 600);
         updateTimeline(currentIndex);
     }
 }
@@ -433,28 +433,6 @@ if (timeline && window.innerWidth > 600) {
         }, 1500);
     }, { passive: false });
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // Modern Navbar Functionality
 document.addEventListener('DOMContentLoaded', function() {
